@@ -600,18 +600,22 @@
 
       <!-- Project 3 -->
       <div class="project-card fade-in">
-        <div class="project-thumb">
-            <video autoplay loop muted playsinline>
-              <source src="higher_gamma_updated.mp4" type="video/mp4">
-            </video>
+        <div class="project-thumb" style="flex-direction:column; padding:4px; gap:2px;">
+            <img src="Overview.png" style="width:100%; height:50%; object-fit:contain;">
+            <img src="animated_cross_validation.gif" style="width:100%; height:60%; object-fit:contain;">
         </div>
         <div class="project-info">
-          <h3>Optimal Control of Droplet Transport in a Microchannel</h3>
+          <h3>
+            Optimal Control and Closed-Loop Stability of Droplet Transport in a Microchannel
+
+          </h3>
+          
           <p class="project-authors">Rajneesh Anand, Mayuresh V. Kothare.</p>
           <p>
-            Physics-based optimal control of pressure-driven droplet transport in microchannels.
-            Reduced-order ODE models and full PDE formulations are used to design control strategies
-            that minimize energy cost, revealing distinct transport regimes.
+            Optimal control of droplet transport in a microchannel via reduced-order ODE (Pontryagin) 
+            and full PDE (CMA-ES) formulations, revealing distinct transport regimes. 
+            Cross-validation of ODE-derived controllers on the PDE identifies fidelity 
+            limits, and CLF analysis establishes exponential stability of the ODE system.
           </p>
           <div class="project-actions">
             <div class="paper-links">
@@ -634,7 +638,12 @@
       <!-- Project 2 -->
       <div class="project-card fade-in">
         <div class="project-thumb">
-            <img src="droplet_choreography.gif">
+
+          <div class="project-thumb" style="flex-direction:column; padding:2px; gap:1px;">
+            <img src="GraphAbstract2.png" style="width:60%; height:30%; object-fit:contain;">
+            <img src="droplet_choreography.gif" style="width:90%; height:50%; object-fit:contain;">
+          </div>
+          
         </div>
         <div class="project-info">
           <h3>Choreography of a Droplet: passive guiding, holding, and surfactant-free splitting</h3>

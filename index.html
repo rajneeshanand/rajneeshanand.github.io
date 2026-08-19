@@ -350,7 +350,8 @@
     }
     .project-info { padding:0; display: flex; flex-direction: column; gap: 8px; }
     .project-info h3 { font-family:var(--serif); font-size:1.4rem; margin-bottom:0.5rem; }
-    .project-info .project-authors { font-size:1.25rem; color:black; margin-bottom:0.5rem; }
+    .project-info .project-authors { font-size:1.1rem; color:var(--text-dim); margin-bottom:0.5rem; }
+    [data-theme="light"] .project-info .project-authors { color:var(--accent); }
     .project-info p { font-size:1.1rem; color:var(--text-secondary); margin-bottom:6px; text-align: justify; }
     .tags { display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:4px; }
     .tag {
@@ -647,8 +648,10 @@
         <div class="project-thumb">
 
           <div class="project-thumb" style="flex-direction:column; padding:2px; gap:1px;">
-            <img src="GraphAbstract2.png" style="width:60%; height:30%; object-fit:contain;">
-            <img src="droplet_choreography.gif" style="width:90%; height:50%; object-fit:contain;">
+            <a href="https://doi.org/10.1039/d6an00516k" target="_blank">
+              <img src="GraphAbstract2.png" style="width:60%; height:30%; object-fit:contain;">
+              <img src="droplet_choreography.gif" style="width:90%; height:50%; object-fit:contain;">
+            </a>
           </div>
           
         </div>
@@ -683,9 +686,11 @@
       <!-- Project 1 -->
       <div class="project-card fade-in">
         <div class="project-thumb">
-            <video autoplay loop muted playsinline>
-              <source src="solarDesalination.mp4" type="video/mp4">
-            </video>
+            <a href="https://doi.org/10.1016/j.applthermaleng.2024.123399" target="_blank">
+              <video autoplay loop muted playsinline>
+                <source src="solarDesalination.mp4" type="video/mp4" >
+              </video>
+            </a>
         </div>
         <div class="project-info">
           <h3>Novel design for solar desalination unit for improved efficiency</h3>

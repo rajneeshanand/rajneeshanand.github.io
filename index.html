@@ -260,7 +260,7 @@
     .carousel-caption {
       padding: 0.75rem 1rem;
       font-size: 0.95rem;
-      color: var(--text-dim);
+      color: var(--accent);
       font-family: var(--mono);
       display: flex;
       align-items: center;
@@ -374,7 +374,7 @@
 
     /* ─── CONTACT ─── */
     .contact-section { text-align:center; }
-    .contact-text { color:var(--text-secondary); max-width:500px; margin:0 auto 2rem; font-size:1rem; }
+    .contact-text { color:var(--text-secondary); max-width:800px; margin:0 auto 2rem; font-size:1.5rem; }
     .contact-links { display:flex; gap:1.25rem; justify-content:center; flex-wrap:wrap; }
     .contact-link {
       display:flex; align-items:center; gap:0.5rem;
@@ -539,14 +539,14 @@
     <div class="about-content">
       <div class="about-text fade-in">
         <p>
-          Rajneesh's research lies at the intersection of <strong>optimal control, reinforcement learning (RL), and microfluidics</strong>. He is interested
-          in developing feedback control policies (using RL) for droplet-based systems operating at low Reynolds numbers. On the control-theoretic side,
-          he works with both reduced-order ODE models and PDE-constrained optimal control formulations. On the data-driven side, he is exploring model-based reinforcement learning
-          to automate droplet manipulation and transport in physical microfluidic environments.
+          Rajneesh's research lies at the intersection of <strong>reinforcement learning (RL), automation & control systems, and fluid dynamics</strong>. He is currently
+          developing feedback control policies for droplet-based systems operating at low Reynolds numbers. On the control-theoretic side,
+          he works with both reduced-order ODE models and PDE-constrained optimal control formulations. On the data-driven side, he is exploring model-based RL
+          ability to robustly automate droplet manipulation and verifies/guarantees closed-loop performance.
         </p>
         <p>
-          More broadly, Rajneesh is interested in bridging physics-based modeling with machine learning for dynamical systems,
-          computational fluid dynamics <b>(CFD)</b>, and developing scalable control strategies for lab-on-a-chip applications.
+          More broadly, Rajneesh is interested in bridging physics-based modeling with machine learning for dynamical systems
+          and developing scalable control strategies for lab-on-a-chip applications.
         </p>
       </div>
 
@@ -566,6 +566,20 @@
             <div class="carousel-slide">
               <div class="slide-placeholder">
                 <img src="APS.jpeg" alt="">
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-slide">
+              <div class="slide-placeholder">
+                <img src="IROS.jpeg" alt="">
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="carousel-slide">
+              <div class="slide-placeholder">
+                <img src="IROSPanel.jpeg" alt="">
               </div>
             </div>
 
@@ -727,7 +741,7 @@
 <section id="contact" class="contact-section">
   <div class="section-inner">
     <h2 class="section-title fade-in">Get in Touch</h2>
-    <p class="contact-text fade-in">
+    <p class="contact-text">
       If you're interested in discussing research, work together, or just want to chat, you can find Rajneesh here:
     </p>
     <div class="contact-links fade-in">
@@ -791,6 +805,8 @@
     const slides = [
       { src: '', caption: 'HPCL NGIC (National Contest) 2022 Winner' },
       { src: '', caption: 'APS Global Physics Summit 2026' },
+      { src: '', caption: 'IROS 2026 Talk on Robotics & Automation in SDLs' },
+      { src: '', caption: 'IROS 2026 Panel Discussion' }
     ];
 
     const track = document.getElementById('carouselTrack');
